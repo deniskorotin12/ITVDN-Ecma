@@ -16,6 +16,9 @@
         "hoek": "5.x.x"
     },
     "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-stage-0": "^6.24.1",
         "lab": "15.x.x",
         "markdown-toc": "1.1.x",
         "webpack": "^3.8.1",
