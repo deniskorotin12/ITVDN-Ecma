@@ -9,4 +9,4 @@ let b = 6;
 var sum = calculator.sum(a,b);
 console.log(sum);
 
-console.log(name);
+console.log(name);  

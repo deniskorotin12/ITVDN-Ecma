@@ -60,47 +60,54 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return name; });
-let name = "denis";
 
-let calculator = {
-    sum: function (a, b) {
+
+var _calculator = __webpack_require__(1);
+
+var _calculator2 = _interopRequireDefault(_calculator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var a = 5;
+var b = 6;
+
+var sum = _calculator2.default.sum(a, b);
+console.log(sum);
+
+console.log(_calculator.name);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var name = "denis";
+
+var calculator = {
+    sum: function sum(a, b) {
         return a + b;
     },
 
-    dif: function (a, b) {
+    dif: function dif(a, b) {
         return a - b;
     }
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (calculator);
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__calculator__ = __webpack_require__(0);
-
-
-
-let a = 5;
-let b = 6;
-
-var sum = __WEBPACK_IMPORTED_MODULE_0__calculator__["a" /* default */].sum(a, b);
-console.log(sum);
-
-console.log(__WEBPACK_IMPORTED_MODULE_0__calculator__["b" /* name */]);
+exports.default = calculator;
+exports.name = name;
 
 /***/ })
 /******/ ]);
