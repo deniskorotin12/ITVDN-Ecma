@@ -70,44 +70,21 @@
 "use strict";
 
 
-var _calculator = __webpack_require__(1);
-
-var _calculator2 = _interopRequireDefault(_calculator);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var a = 5;
-var b = 6;
-
-var sum = _calculator2.default.sum(a, b);
-console.log(sum);
-
-console.log(_calculator.name);
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var name = "denis";
-
-var calculator = {
-    sum: function sum(a, b) {
-        return a + b;
-    },
-
-    dif: function dif(a, b) {
-        return a - b;
-    }
+var opt = {
+    name: "denis",
+    age: 11,
+    type: "human"
 };
 
-exports.default = calculator;
-exports.name = name;
+function render(options) {
+    var name = options.name,
+        age = options.age,
+        type = options.type;
+
+    console.log(name + ",\n " + age + ",\n " + type);
+};
+
+render(opt);
 
 /***/ })
 /******/ ]);
